@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <!---Navigation-->
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topic1.html">Helpdesk</a></li>
+                <li><a href="topic2.html">Ticketing</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <h1 id="main-title">Helpdesk Quiz</h1>
+
+                <form id="quizForm">
+
+                    <!-- Fill in the Blank-->
+                    <div class="card">
+                        <p>1. A system used to track support requests is called a ______ system.</p>
+                        <input type="text" id="q1">
+                    </div>
+
+                    <!-- Multiple choice-->
+                    <div class="card">
+                        <p>2. What is the main role of a helpdesk</p>
+                        <input type="radio" name="q2" value="a">Marketing<br>
+                        <input type="radio" name="q2" value="b">User support<br>
+                        <input type="radio" name="q2" value="c">Sales<br>
+                    </div>
+
+                    <div class="card">
+                        <p>3. What does SLA stand for? </p>
+                        <input type="radio" name="q3" value="a">Service Level Agreement<br>
+                        <input type="radio" name="q3" value="b">User System Login Access<br>
+                        <input type="radio" name="q3" value="c">Software Level Analysis<br>
+                    </div>
+
+                    <div class="card">
+                        <p>4. What happens first in a ticketing system? </p>
+                        <input type="radio" name="q4" value="a">Ticket resolved<br>
+                        <input type="radio" name="q4" value="b">User submits request<br>
+                        <input type="radio" name="q4" value="c">Ticket closed<br>
+                    </div>
+                                    <!--Multiple choice-->
+                    <div class="card">
+                        <p>5. Which are helpdesk functions? </p>
+                        <input type="checkbox" name="q5" value="a">Troubleshooting<br>
+                        <input type="checkbox" name="q5" value="b">Cooking<br>
+                        <input type="checkbox" name="q5" value="c">User support<br>
+                    </div>
+
+                    <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+                    <button type="reset" onclick="resetQuiz()">Reset</button>
+
+                </form>
+                <div id="results"></div>
+            </div>
+
+            <footer>
+                <p>This is a class project for IT 3203
+                    <a href="https://ksuweb.github.io/IT3203/">Course Website</a>
+                </p>
+            </footer>
+
+<script src="script.js"></script>
+    </body>
+</html>

@@ -29,7 +29,37 @@
  nav ul li a:hover {
     color: yellow;
  }
+/* form styling */
+form {
+   max-width: 600px;
+   margin: auto;
+}
 
+/* space put questions */
+.card {
+   margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+   padding: 10px 15px;
+   margin: 10px 5px 0 0;
+   border: none;
+   background-color: #333;
+   color: white;
+   cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+   background-color: #555;
+}
+
+/* Results section */
+#results {
+   margin-top: 20px;
+   font-weight: bold;
+}
 
 
  /*footer*/
