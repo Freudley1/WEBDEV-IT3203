@@ -3,14 +3,21 @@
  body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color:lightblue;
+    background: color #f4f4f4;;
  }
 
- /* Navigation bar */
+ .container {
+   max-width: 1000px;
+   margin: auto;
+   padding: 20px;
+ }
+
+ /* Navigation bar * Make nav wrap on smaller*/
 
  nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
     background-color:grey;
     padding: 10px;
@@ -23,6 +30,25 @@
     margin: 0 15px;
     font-weight: bold;
 
+ }
+
+ @media (max-width: 600px){
+   .container{
+      padding: 10px;
+   }
+ }
+
+ /* Mobile Navigation*/
+ @media (max-width: 600px) {
+   nav ul {
+      flex-direction: column;
+      align-items: center;
+   }
+
+
+   nav ul li {
+      margin: 5px 0;
+   }
  }
 
  /* Hover effect */
@@ -55,6 +81,26 @@ button:hover {
    background-color: #555;
 }
 
+input, button {
+   width: 100%;
+   box-sizing: border-box;
+}
+@media (max-width:600px) {
+   form{
+      padding: 10px;
+   }
+}
+
+/* Tablet */
+@media (max-width: 992px){
+   nav ul {
+      flex-wrap: wrap;
+   }
+
+   .container{
+      padding: 15px;
+   }
+}
 /* Results section */
 #results {
    margin-top: 20px;
@@ -70,3 +116,4 @@ button:hover {
     color: white;
     margin-top: 20px; 
 }
+
